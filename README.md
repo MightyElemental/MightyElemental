@@ -10,11 +10,14 @@
 ![Manjaro](https://img.shields.io/badge/Manjaro-32C05C?logo=manjaro&logoColor=fff&style=for-the-badge)
 ![Debian](https://img.shields.io/badge/Debian-D70751?logo=debian&logoColor=fff&style=for-the-badge)
 
-![MightyElemental's GitHub stats](https://github-readme-stats.vercel.app/api?username=MightyElemental&theme=merko&count_private=true&show_icons=true)
+![MightyElemental's GitHub stats](https://github-readme-stats.vercel.app/api?username=MightyElemental&theme=merko&count_private=true&show_icons=true&hide=prs,contribs)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MightyElemental&theme=merko&layout=compact&hide=maxscript)](https://github.com/anuraghazra/github-readme-stats)
 
 <!--
+Thanks to
+https://github.com/anuraghazra/github-readme-stats
+
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
