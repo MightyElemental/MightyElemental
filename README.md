@@ -12,7 +12,7 @@
 
 ![MightyElemental's GitHub stats](https://github-readme-stats.vercel.app/api?username=MightyElemental&theme=merko&count_private=true&show_icons=true&hide=prs,contribs)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MightyElemental&theme=merko&layout=compact&hide=maxscript)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=MightyElemental&theme=merko&layout=compact&hide=maxscript&exclude_repo=JavaProjects)](https://github.com/anuraghazra/github-readme-stats)
 
 <!--
 Thanks to
