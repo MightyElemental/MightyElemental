@@ -2,6 +2,7 @@
 
 ![Java](https://img.shields.io/badge/java-00599C.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Python](https://img.shields.io/badge/python-00599C.svg?style=for-the-badge&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/c++-00599C.svg?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![Haskell](https://img.shields.io/badge/haskell-00599C.svg?style=for-the-badge&logo=haskell&logoColor=white)
 ![Lua](https://img.shields.io/badge/Lua-00599C?logo=lua&logoColor=fff&style=for-the-badge)
 
