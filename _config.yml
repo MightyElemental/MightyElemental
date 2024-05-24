@@ -1,0 +1,7 @@
+title: MightyElemental
+description: My project collection
+markdown: kramdown
+theme: jekyll-theme-hacker
+url: "https://www.mightyelemental.net"
+plugins:
+  - jekyll-sitemap
