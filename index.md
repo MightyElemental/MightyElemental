@@ -38,7 +38,7 @@ The second pirate-themed game to be created as part of the Software Engineering 
 
 ![A screenshot from within the game](https://eng1-team-29.github.io/Assessment-2-Website/img/kraken.png)
 
-The original project can be found here: [ENG1-Project](https://github.com/anna-singleton/ENG1-Project)
+The original project can be found here: [ENG1-Project](https://github.com/anna-singleton/ENG1-Project){:target="_blank"}
 
 ### > [Factory Wars](https://www.factorywars.net/){:target="_blank"}
 
