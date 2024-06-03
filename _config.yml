@@ -4,4 +4,7 @@ markdown: kramdown
 theme: jekyll-theme-hacker
 url: "https://www.mightyelemental.net"
 plugins:
-  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-sass-converter
+sass:
+  style: compact
