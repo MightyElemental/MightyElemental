@@ -68,6 +68,10 @@ Created as part of my A-Level course in Computer Science, this is a simulated op
 
 ![A screenshot of XendosXP](https://github.com/MightyElemental/Xendos/raw/master/imgs/xendos-splatter.png)
 
+### > [Audio Drama Generator](https://github.com/MightyElemental/audio-drama-generator){:target="_blank"}
+
+A system to generate stories and act them out from any given user prompt. Characters can be customized and it supports multiple TTS systems including OpenAI, ElevenLabs, dectalk, and a custom API endpoint.
+
 ### > [Haskell Raytracer](https://github.com/MightyElemental/Haskell-RayTracer){:target="_blank"}
 
 A raytracer written in Haskell that supports planes, spheres, lighting, and reflections.
