@@ -9,7 +9,7 @@ layout: default
 ### > University Dissertation: [Generating Images Using Generative Deep Learning](https://github.com/MightyElemental/swintransgan-faces){:target="_blank"}
 How batch and window sizes affect image quality in Swin Transformer GANs
 
-![A sample of the generated output](https://github.com/MightyElemental/swintransgan-faces/raw/master/imgs/BestManualSelected.png)
+![A sample of the generated output](https://github.com/MightyElemental/swintransgan-faces/raw/master/imgs/BestManualSelected.png){:width="100%"}
 
 #### Abstract
 
