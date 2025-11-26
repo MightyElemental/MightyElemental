@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MightyElemental</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Vue 3 global build -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <!-- js-yaml for parsing YAML in the browser -->
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+</head>
+<body>
+
+    <!-- Modal component template -->
+    <template id="project-modal-template">
+      <div class="modal-backdrop" @click="onBackdropClick">
+        <div class="modal">
+          <button class="modal-close" @click="close" aria-label="Close">
+            ×
+          </button>
+
+          <div
+            class="carousel-shell"
+            v-if="project.images && project.images.length"
+          >
+            <div class="carousel-main">
+              <img
+                v-if="currentImage"
+                :src="currentImage"
+                :alt="project.title + ' screenshot ' + (currentIndex + 1)"
+              />
+
+              <button
+                class="carousel-nav-button prev"
+                v-if="project.images.length > 1"
+                @click.stop="prev"
+              >
+                ‹
+              </button>
+              <button
+                class="carousel-nav-button next"
+                v-if="project.images.length > 1"
+                @click.stop="next"
+              >
+                ›
+              </button>
+            </div>
+
+            <div
+              class="carousel-dots"
+              v-if="project.images.length > 1"
+            >
+              <button
+                v-for="(img, index) in project.images"
+                :key="index"
+                class="carousel-dot"
+                :class="{ active: index === currentIndex }"
+                @click.stop="goTo(index)"
+              ></button>
+            </div>
+          </div>
+
+          <div class="modal-body">
+            <div class="modal-header-block">
+              <div>
+                <h2 class="modal-title">{{ project.title }}</h2>
+                <div class="modal-tags">
+                  <span
+                    v-for="cat in project.categories || []"
+                    :key="cat"
+                    class="modal-tag"
+                  >
+                    {{ cat }}
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <p class="modal-description">
+              {{ project.description }}
+            </p>
+
+            <div
+              class="modal-links"
+              v-if="project.links && project.links.length"
+            >
+              <a
+                v-for="(link, idx) in project.links"
+                :key="idx"
+                class="modal-link"
+                :href="link.url"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span v-html="link.label"></span>
+                <span class="arrow">↗</span>
+              </a>
+            </div>
+
+            <div class="modal-meta">
+              <span>Click outside the card to close.</span>
+              <span v-if="project.images && project.images.length">
+                {{ currentIndex + 1 }} / {{ project.images.length }}
+                screenshot<span v-if="project.images.length !== 1">s</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+  <div id="app">
+    <div class="page">
+      <header>
+        <h1>
+          <span class="accent-dot"></span>
+          <span>{{ name }}</span>
+        </h1>
+        <p>{{ tagline }}</p>
+        <div class="chip-row">
+          <span class="chip" v-for="skill in skills" :key="skill">
+            {{ skill }}
+          </span>
+          <span class="status-pill">
+            <span class="dot"></span>
+            <span>Open to opportunities</span>
+          </span>
+        </div>
+      </header>
+
+      <p v-if="loading" class="message">
+        Loading projects&hellip;
+      </p>
+      <p v-if="error" class="message error">
+        {{ error }}
+      </p>
+
+      <section
+        v-for="(projects, category) in groupedProjects"
+        :key="category"
+        class="category-section"
+        v-if="projects.length"
+      >
+        <div class="category-header">
+          <div class="category-title">{{ formatCategory(category) }}</div>
+          <div class="category-count">
+            {{ projects.length }} project<span v-if="projects.length !== 1">s</span>
+          </div>
+        </div>
+
+        <div class="tiles-grid">
+          <article
+            v-for="project in projects"
+            :key="project.id"
+            class="project-tile"
+            @click="openProject(project)"
+            @mouseenter="preloadProjectImages(project)"
+          >
+            <div class="tile-thumb-wrapper">
+              <img
+                v-if="project.thumbnail"
+                :src="project.thumbnail"
+                :alt="project.title"
+                class="tile-thumb"
+              />
+              <div v-else class="tile-thumb"></div>
+
+              <div class="tile-thumb-badge">
+                <span class="pip"></span>
+                <span>{{ primaryCategory(project) }}</span>
+              </div>
+            </div>
+
+            <div class="tile-body">
+              <div class="tile-title-row">
+                <h3 class="tile-title">{{ project.title }}</h3>
+                <span class="tile-arrow">↗</span>
+              </div>
+              <p class="tile-description">
+                {{ truncate(project.description, 120) }}
+              </p>
+              <div class="tile-tags">
+                <span
+                  v-for="cat in project.categories || []"
+                  :key="cat"
+                  class="tile-tag"
+                >
+                  {{ cat }}
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- Use the modal component -->
+    <project-modal
+      v-if="selectedProject"
+      :project="selectedProject"
+      @close="closeProject"
+    ></project-modal>
+  </div>
+
+  <!-- Main JS (ES module) -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
