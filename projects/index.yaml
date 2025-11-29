@@ -88,6 +88,7 @@ projects:
     description: >
       A factory-builder game where you complete challenges to level up to better defend your machinery from rival bases.
     images:
+      - /projects/factorywars/thumbnail.png
     links:
       - label: Website
         url: https://www.factorywars.net/
