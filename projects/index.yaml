@@ -257,4 +257,5 @@ projects:
       ticket as they come in. A single-page application is used to allow managers to
       control and review ticket assignment decisions, shift hours, and specializations.
     images:
+      - /projects/atas/thumbnail.png
     links:
