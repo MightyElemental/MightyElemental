@@ -9,7 +9,7 @@ createApp({
   },
   data() {
     return {
-      name: "MightyElemental",
+      name: "James Burnell",
       tagline: "Machine learning engineer and software developer.",
       skills: ["Machine Learning", "Game Development", "Data Visualization", "Web Apps"],
       projects: [],
