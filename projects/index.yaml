@@ -1,5 +1,5 @@
 projects:
-  - title: University Dissertation - Researching the Effects of Batch Size and Window Size in SWIN-Transformer GANs
+  - title: Researching the Effects of Batch Size and Window Size in SWIN-Transformer GANs
     categories:
       - machine learning
       - assessment
@@ -12,6 +12,7 @@ projects:
       The worst was found to have a window size of 8 and batch size of 200 (FID score of 180.6).
       Future investigation could be undertaken to study the effects of learning rate, attention head count, and transformer layer count.
       Switching to use a Wasserstein discriminator could also beneficial as it could suppress the mode collapse issues encounted during training.
+      This was my University Dissertation and it received a First-Class grade.
     images:
       - https://raw.githubusercontent.com/MightyElemental/swintransgan-faces/master/imgs/BestManualSelected.png
       - /projects/dissertation/progression.png
@@ -86,7 +87,7 @@ projects:
     categories:
       - game
     description: >
-      A factory-builder game where you complete challenges to level up to better defend your machinery from rival bases.
+      A factory-builder game where you complete challenges to level up to better defend your machinery from rival bases. [WIP]
     images:
       - /projects/factorywars/thumbnail.png
     links:
@@ -107,12 +108,12 @@ projects:
       - label: View on GitHub
         url: https://github.com/MightyElemental/ReactorOptimizer
 
-  - title: A-Level Assessment - Xendos
+  - title: Xendos - A Simulated Desktop Environment
     categories:
       - tool
       - assessment
     description: >
-      Created as part of my A-Level course in Computer Science, this is a simulated operating system
+      Created as part of my A-Level course in Computer Science, this is a simulated desktop environment
       that has a custom window manager and an extensible software system. Windows can be dragged,
       stacked, hidden, and unhidden. Additional software can be loaded directly from packaged jar
       files without needing to recompile Xendos. The Xendos development library has multiple UI
@@ -202,7 +203,7 @@ projects:
       - machine learning
       - tool
     description: >
-      Generates images based on a text input.
+      Generates images based on a text input. [WIP]
     images:
     links:
       - label: View on GitHub
@@ -213,7 +214,7 @@ projects:
       - machine learning
       - tool
     description: >
-      Generates videos based on a text input.
+      Generates videos based on a text input. [WIP]
     images:
     links:
       - label: View on GitHub
@@ -225,7 +226,7 @@ projects:
       - tool
     description: >
       osu! is a rythm game in which you have to click circles in time to music.
-      Each map needs to be manually created, but this project sets out to automate the process.
+      Each map needs to be manually created, but this project sets out to automate the process. [WIP]
     images:
       - https://i.ppy.sh/d0b506516bb0fd287d3e091b288c4f63b4389069/68747470733a2f2f6f73752e7070792e73682f77696b692f696d616765732f436c69656e742f426561746d61705f656469746f722f696d672f636f6d706f73652e6a7067
     links:
@@ -239,7 +240,7 @@ projects:
     description: >
       Because not every mod has a resource pack to fit with the style of a given base pack,
       this tool attempts to allow a user to drag any mod into the tool and generate a new
-      resource pack in the desired style.
+      resource pack in the desired style. [WIP]
     images:
       - /projects/resource-pack-generator/thumbnail.png
     links:
