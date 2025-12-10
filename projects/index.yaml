@@ -205,6 +205,7 @@ projects:
     description: >
       Generates images based on a text input. [WIP]
     images:
+      - /projects/texttoimg/thumbnail.png
     links:
       - label: View on GitHub
         url: https://github.com/MightyElemental/Text2ImgGAN
@@ -216,6 +217,7 @@ projects:
     description: >
       Generates videos based on a text input. [WIP]
     images:
+      - /projects/texttovid/thumbnail.png
     links:
       - label: View on GitHub
         url: https://github.com/MightyElemental/video-generator
