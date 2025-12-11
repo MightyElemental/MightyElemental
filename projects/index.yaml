@@ -214,6 +214,20 @@ projects:
       - label: Read the Paper
         url: /projects/int2/int2paper.pdf
 
+  - title: Automated Ticket Assignment System
+    categories:
+      - machine learning
+      - tool
+    description: >
+      Developed at my company to relieve the workload of managers, this tool is able to
+      read tickets and assign them to service desk analysts based on their strengths and
+      existing workloads. It uses a local, fine-tuned language model to analyse each
+      ticket as they come in. A single-page application is used to allow managers to
+      control and review ticket assignment decisions, shift hours, and specializations.
+    images:
+      - /projects/atas/thumbnail.png
+    links:
+
   - title: Text-to-Image Generator
     categories:
       - machine learning
@@ -266,17 +280,3 @@ projects:
         url: https://github.com/MightyElemental/purebdcraft-generator
       - label: Inspiration
         url: https://bdcraft.net/downloads/purebdcraft-minecraft/
-
-  - title: Automated Ticket Assignment System
-    categories:
-      - machine learning
-      - tool
-    description: >
-      Developed at my company to relieve the workload of managers, this tool is able to
-      read tickets and assign them to service desk analysts based on their strengths and
-      existing workloads. It uses a local, fine-tuned language model to analyse each
-      ticket as they come in. A single-page application is used to allow managers to
-      control and review ticket assignment decisions, shift hours, and specializations.
-    images:
-      - /projects/atas/thumbnail.png
-    links:
