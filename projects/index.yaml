@@ -198,6 +198,22 @@ projects:
       - label: View on GitHub
         url: https://github.com/MightyElemental/word-guesser-solver
 
+  - title: Image Classification - CIFAR10
+    categories:
+      - machine learning
+      - assessment
+      - tool
+    description: >
+      A group university project to develop a CIFAR10 image classifier. This was our first project
+      after being introduced to machine learning and received a First-Class with Distinction.
+    images:
+      - /projects/int2/thumbnail.png
+    links:
+      - label: View on GitHub
+        url: https://github.com/dont-text-me/INT2GRP19
+      - label: Read the Paper
+        url: /projects/int2/int2paper.pdf
+
   - title: Text-to-Image Generator
     categories:
       - machine learning
