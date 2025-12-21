@@ -280,3 +280,16 @@ projects:
         url: https://github.com/MightyElemental/purebdcraft-generator
       - label: Inspiration
         url: https://bdcraft.net/downloads/purebdcraft-minecraft/
+
+  - title: Tower Defense Game
+    categories:
+      - game
+    description: >
+      A tower defense game that allows for custom maps by using flood-fill path finding.
+      There are multiple turrets and they can use different targetting algorithms such as nearest,
+      most health, least health. Developed during GCSE/A-Level, this is an old project.
+    images:
+      - /projects/tower-defense/thumbnail.png
+    links:
+      - label: View on GitHub
+        url: https://github.com/MightyElemental/JavaProjects/tree/master/Tower%20Defense
